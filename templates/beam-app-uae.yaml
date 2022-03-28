@@ -1,0 +1,10 @@
+apiVersion: flink.apache.org/v1alpha1
+kind: FlinkSessionJob
+metadata:
+  name: beam-app-uae
+spec:
+  clusterId: beam-session-cluster-flink-deploy
+  job:
+    jarURI: local:///opt/flink/examples/streaming/StateMachineExample.jar
+    parallelism: 1
+    upgradeMode: stateless
