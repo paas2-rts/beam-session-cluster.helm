@@ -6,5 +6,5 @@ version: 0.1.1
 appVersion: 0.1.1
 dependencies:
 - name: flink-deploy-base
-  version: "1.0.0"
-  repository: "file://../flink-deploy-base.helm"
+  version: "1.0.1"
+  repository: https://paas2-rts.github.io/rts-helm-charts/

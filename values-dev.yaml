@@ -10,7 +10,7 @@ global:
   taskManager:
     numberOfTaskSlots: "1"
     resource:
-      memory: "2048m"
+      memory: "1024m"
       cpu: 0.25
 
   # job:

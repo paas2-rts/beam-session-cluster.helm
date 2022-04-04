@@ -1,9 +1,9 @@
 apiVersion: flink.apache.org/v1alpha1
 kind: FlinkSessionJob
 metadata:
-  name: beam-app-uae
+  name: beam-app-uae-session-job
 spec:
-  clusterId: beam-session-cluster-flink-deploy
+  clusterId: beam-session-cluster
   job:
     jarURI: local:///opt/flink/examples/streaming/StateMachineExample.jar
     parallelism: 1
