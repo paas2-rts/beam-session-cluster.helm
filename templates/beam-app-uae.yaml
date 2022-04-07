@@ -5,7 +5,7 @@ metadata:
 spec:
   clusterId: beam-session-cluster
   job:
-    jarURI: file:///artifacts/beam-app-bundled-1.0.1.jar
+    jarURI: file:///artifacts/beam-app-bundled-1.0.0.jar
     entryClass: org.example.kafkaoffset.NoKafkaOperatorApp
       #fasterCopy needs to be set in the application
     args: 
