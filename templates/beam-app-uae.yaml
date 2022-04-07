@@ -5,6 +5,6 @@ metadata:
 spec:
   clusterId: beam-session-cluster
   job:
-    jarURI: local:///opt/flink/examples/streaming/StateMachineExample.jar
+    jarURI: file:///opt/flink/examples/streaming/StateMachineExample.jar
     parallelism: 1
     upgradeMode: stateless
