@@ -6,5 +6,11 @@ spec:
   clusterId: beam-session-cluster
   job:
     jarURI: file:///artifacts/beam-app-bundled-1.0.0.jar
+    entryClass: org.example.kafkaoffset.NoKafkaOperatorApp
+      #fasterCopy needs to be set in the application
+      args: 
+        - --runner=FlinkRunner
+        - --kafkaBrokers=kafka-cp-kafka.kafka.svc.cluster.local:9092
+        - --checkpointingInterval=10000
     parallelism: 1
     upgradeMode: stateless
