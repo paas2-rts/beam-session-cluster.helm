@@ -15,3 +15,6 @@ state: suspended -> running
 Upgrade job using savepoint
 
 image: gimral/beam-app:1.0.4 -> gimral/beam-app:1.0.5
+
+Update base chart
+ helm dependency update

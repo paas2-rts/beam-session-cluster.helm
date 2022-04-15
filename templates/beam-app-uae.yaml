@@ -1,4 +1,4 @@
-apiVersion: flink.apache.org/v1alpha1
+apiVersion: flink.apache.org/v1beta1
 kind: FlinkSessionJob
 metadata:
   name: beam-app-uae-session-job
@@ -10,7 +10,7 @@ spec:
       #fasterCopy needs to be set in the application
     args: 
       - --runner=FlinkRunner
-      - --kafkaBrokers=kafka-1.kafka.svc.cluster.local:9092
+      - --kafkaBrokers=kafka-1-headless.kafka.svc.cluster.local:9092
       - --checkpointingInterval=10000
     parallelism: 1
     upgradeMode: stateless
